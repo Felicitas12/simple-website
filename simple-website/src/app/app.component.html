@@ -1,0 +1,45 @@
+<div class="header">
+  <div class="greeting">
+    Welcome to a
+    <span style="color: orange; font-weight: bold;">
+      VERY
+    </span>
+    simple website [Renderer: ]
+  </div>
+  <div class="info">
+    You can make this as complex as you want&rpar;
+  </div>
+</div>
+
+<div style="width: 600px;">
+  <div class="container">
+    <div class="notice">
+      This view retrieves JSON object from Back-End server.
+    </div>
+    <div class="int-box" style="align-items: start;">
+      <div class="status">
+        {{apiRespStatus$ | async}}
+      </div>
+
+      <pre *ngIf="apiResp$ | async" class="pre-form">
+{{ apiResp$ | async | json }}
+      </pre>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="notice">
+      If FTP server is live, you'll be able to download a file.
+    </div>
+    <div class="int-box" style="flex-direction: row;">
+      <div class="status">
+        {{ ftpStatus$ | async }}
+      </div>
+      <button [ngClass]="{ 'btn-inactive': !ftpReady, 'btn-download': ftpReady }"
+      (click)="ftpReady && onDownload()">
+        <span style="font-weight: bolder;font-size: x-large;">&DownArrowBar;</span>
+        Download
+      </button>
+    </div>
+  </div>
+</div>

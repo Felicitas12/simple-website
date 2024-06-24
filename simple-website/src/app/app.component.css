@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background-color: darkred;
+  color: white;
+}
+
+.header .greeting {
+  margin-bottom: 2em;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.header .info {
+  font-size: larger;
+  font-family: consolas;
+  color: orange;
+}
+
+.container {
+  margin: 2em;
+  padding: 1em;
+  width: 100%;
+  background-color: darkorange;
+  border-radius: 1em;
+}
+
+.container .notice {
+  font-weight: bold;
+  margin: 1em;
+  font-size: large;
+}
+
+.container .int-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  margin: 1em;
+  border-radius: 1em;
+  background-color: lightgray;
+  color: black;
+  font-family: consolas;
+}
+
+.container .int-box .status {
+  color: dimgray;
+}
+
+.container .int-box .pre-form {
+  margin: 1em;
+  white-space: pre-wrap;
+}
+
+.container .int-box .btn-download {
+  text-align: center;
+  padding: 1em;
+  border: 0;
+  border-radius: 1em;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.container .int-box .btn-download:hover {
+  cursor: pointer;
+  background-color: darkorange;
+}
+
+.container .int-box .btn-inactive {
+  text-align: center;
+  padding: 1em;
+  border: 0;
+  border-radius: 1em;
+  background-color: gray;
+  color: lightgrey;
+}

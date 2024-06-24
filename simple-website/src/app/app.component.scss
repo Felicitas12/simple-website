@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background-color: darkred;
+  color: white;
+
+  .greeting {
+      margin-bottom: 2em;
+      font-size: xx-large;
+      font-family: 'Franklin Gothic Medium';
+  }
+
+  .info {
+      font-size: larger;
+      font-family: consolas;
+      color: orange;
+  }
+}
+
+.container {
+  margin: 2em;
+  padding: 1em;
+  width: 100%;
+  background-color: darkorange;
+  border-radius: 1em;
+
+  .notice {
+      font-weight: bold;
+      margin: 1em;
+      font-size: large;
+  }
+
+  .int-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      padding: 2em;
+      margin: 1em;
+      border-radius: 1em;
+      background-color: lightgray;
+      color: black;
+      font-family: consolas;
+
+      .status {
+          color: dimgray;
+      }
+
+      .pre-form {
+          margin: 1em;
+          white-space: pre-wrap;
+      }
+
+      .btn-download {
+          text-align: center;
+          padding: 1em;
+          border: 0;
+          border-radius: 1em;
+          background-color: orange;
+          color: white;
+          font-weight: bold;
+
+          &:hover {
+              cursor: pointer;
+              background-color: darkorange;
+          }
+      }
+      .btn-inactive {
+          text-align: center;
+          padding: 1em;
+          border: 0;
+          border-radius: 1em;
+          background-color: gray;
+          color: lightgrey;
+      }
+  }
+}
